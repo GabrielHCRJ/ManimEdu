@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/gabrielgti/workspace/AnimationsManim/media/videos/seno/480p15/partial_movie_files/Seno/1185818338_2142168290_223132457.mp4'
+file 'file:/home/gabrielgti/workspace/AnimationsManim/media/videos/seno/480p15/partial_movie_files/Seno/624642324_3376954301_4109636830.mp4'
+file 'file:/home/gabrielgti/workspace/AnimationsManim/media/videos/seno/480p15/partial_movie_files/Seno/624642324_629756864_2109497673.mp4'
+file 'file:/home/gabrielgti/workspace/AnimationsManim/media/videos/seno/480p15/partial_movie_files/Seno/624642324_1900507706_1551695959.mp4'
+file 'file:/home/gabrielgti/workspace/AnimationsManim/media/videos/seno/480p15/partial_movie_files/Seno/624642324_255102487_1453978640.mp4'
