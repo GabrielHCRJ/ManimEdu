@@ -44,6 +44,7 @@ class Seno(Scene):
    
         
         self.play(Create(curva_parametrica2),Create(seno),run_time=3)
+        self.play(Create(pontoA),Write(label_pontoA))
         self.play(Create(curva_parametrica))      
         self.play(Create(linha1),Create(angle))
 
