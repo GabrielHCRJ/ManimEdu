@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/1185818338_3723803501_223132457.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_1905097351_2237196059.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_1471466875_2741954838.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_188962237_1037433544.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_517137585_1148235808.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_1830841011_270619697.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_2954695139_1820695288.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_4115982506_1095854954.mp4'
+file 'file:C:/Users/Gabriel GTI/workplace/AnimationsManim/media/videos/senoG1/480p15/partial_movie_files/SenoQ1/624642324_255102487_1608111484.mp4'
