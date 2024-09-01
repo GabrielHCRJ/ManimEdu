@@ -1,2 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/home/gabrielgti/workplace/AnimationsManim/REDMAT/media/videos/neon/480p15/partial_movie_files/NeonLine/1185818338_639325771_223132457.mp4'
