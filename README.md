@@ -1,8 +1,8 @@
-# Animações Didáticas com Python e Manim
+# Animações Didáticas com Manim uma lib do Python
 <details><summary> tl;dr:</summary>  To organizando as animações q to fazendo no manim em um lugar só, podem alterar, usar, vender, fazer o que quisere. Só mantenham a lib viva</details>
 
 ---
-Este repositório contém uma coleção de animações criadas usando a biblioteca [Manim](https://github.com/3b1b/manim), com o objetivo de produzir materiais didáticos digitais para serem utilizados em sala de aula e compartilhados online de forma a auxiliar o trabalho dos professores inserindo novas tecnologias no ensino de matemática.
+Este repositório contém uma coleção de animações criadas usando a biblioteca [Manim](https://github.com/3b1b/manim), com o objetivo de produzir materiais didáticos digitais para serem utilizados em sala de aula e compartilhados online de forma a auxiliar o trabalho dos professores inserindo novas tecnologias no ensino de matemática.  
 
 ## 📚 Propósito do Projeto
 
