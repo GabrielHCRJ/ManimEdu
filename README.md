@@ -52,3 +52,6 @@ O objetivo deste projeto é criar recursos visuais que auxiliem no ensino de con
      ├── Tex/ #Dentro dessa pasta se encontram os códigos LaTeX usado nas animações. !!!!Não alterar!!!!        
 ├── README.md                # Este arquivo
 └── ...                      # As demais pastas nesse repositório são necessárias para carregar as libs
+
+🤝 Contribuindo
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
