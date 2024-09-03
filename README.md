@@ -56,7 +56,9 @@ O objetivo deste projeto é criar recursos visuais que auxiliem no ensino de con
 
 ## 📚 CATÁLOGO 
 
+```plaintext
 IdentidadeTrigonometricaFundamental.py - Animação que demonstra a identidade trigonométrica fundamental utilizando teorema de pitágoras.
+
 
 SenoDomimg.py - Domínio e Imagem 
 SenoInversa.py - Função Inversa 
@@ -82,7 +84,7 @@ TgReciproca.py - A função reciproca
 TgConcavidade.py - A concavidade da função 
 TgCortesEixos.py - Em quais pontos a função corta nos eixos
 TgPeriodicidade.py - Periodicidade da função
-
+```
 
 
 
