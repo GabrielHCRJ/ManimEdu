@@ -58,6 +58,7 @@ O objetivo deste projeto é criar recursos visuais que auxiliem no ensino de con
 
 ```plaintext
 IdentidadeTrigonometricaFundamental.py - Animação que demonstra a identidade trigonométrica fundamental utilizando teorema de pitágoras.
+TVM_mobile.py - Teorema do Valor Médio configurado para ser renderizado no formato mobile para rells,tiktok e etc.
 
 
 SenoDomimg.py - Domínio e Imagem 
