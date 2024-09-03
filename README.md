@@ -53,5 +53,38 @@ O objetivo deste projeto é criar recursos visuais que auxiliem no ensino de con
 ├── README.md                # Este arquivo
 └── ...                      # As demais pastas nesse repositório são necessárias para carregar as libs
 ```
+
+## 📚 CATÁLOGO 
+
+IdentidadeTrigonometricaFundamental.py - Animação que demonstra a identidade trigonométrica fundamental utilizando teorema de pitágoras.
+
+SenoDomimg.py - Domínio e Imagem 
+SenoInversa.py - Função Inversa 
+SenoSimetria.py - A simetria da função 
+SenoReciproca.py - A função reciproca 
+SenoConcavidade.py - A concavidade da função 
+SenoCortesEixos.py - Em quais pontos a função corta nos eixos
+SenoPeriodicidade.py - Periodicidade da função
+
+
+CosDomimg.py - Domínio e Imagem 
+CosInversa.py - Função Inversa 
+CosSimetria.py - A simetria da função 
+CosReciproca.py - A função reciproca 
+CosConcavidade.py - A concavidade da função 
+CosCortesEixos.py - Em quais pontos a função corta nos eixos
+CosPeriodicidade.py - Periodicidade da função
+
+TgDomimg.py - Domínio e Imagem 
+TgInversa.py - Função Inversa 
+TgSimetria.py - A simetria da função 
+TgReciproca.py - A função reciproca 
+TgConcavidade.py - A concavidade da função 
+TgCortesEixos.py - Em quais pontos a função corta nos eixos
+TgPeriodicidade.py - Periodicidade da função
+
+
+
+
 ## 🤝 Contribuindo
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
