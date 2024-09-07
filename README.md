@@ -1,4 +1,4 @@
-# Animações Didáticas com Manim uma lib do Python
+# ManimEdu: Animações Didáticas para Matemática com Manim uma lib Python
 <details><summary> tl;dr:</summary>  To organizando as animações q to fazendo no manim em um lugar só, podem alterar, usar, vender, fazer o que quisere. Só mantenham a lib viva</details>
 
 ---
