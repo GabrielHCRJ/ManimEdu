@@ -1,5 +1,4 @@
 # ManimEdu: Animações Didáticas para Matemática com Manim uma lib Python
-<details><summary> tl;dr:</summary>  To organizando as animações q to fazendo no manim em um lugar só, podem alterar, usar, vender, fazer o que quisere. Só mantenham a lib viva</details>
 
 ---
 Este repositório contém uma coleção de animações criadas usando a biblioteca [Manim](https://github.com/3b1b/manim), com o objetivo de produzir materiais didáticos digitais para serem utilizados em sala de aula e compartilhados online de forma a auxiliar o trabalho dos professores inserindo novas tecnologias no ensino de matemática.  
@@ -48,7 +47,7 @@ O objetivo deste projeto é criar recursos visuais que auxiliem no ensino de con
 │   └── ...
 ├── media/
      ├── videos/  # Aqui será armazenado todos os vídeos que foram renderizados no diretório principal
-          ├── exemplo_pasta #<strong>ONDE ESTÃO AS ANIMAÇÕES</strong> Cada animaçao terá uma pasta exclusiva e contará com subpastas separadas pela qualidade do vídeo renderizado (-ql, -qm, -qh)
+          ├── exemplo_pasta # ONDE ESTÃO AS ANIMAÇÕES Cada animaçao terá uma pasta exclusiva e contará com subpastas separadas pela qualidade do vídeo renderizado 
      ├── Tex/ #Dentro dessa pasta se encontram os códigos LaTeX usado nas animações. !!!!Não alterar!!!!        
 ├── README.md                # Este arquivo
 └── ...                      # As demais pastas nesse repositório são necessárias para carregar as libs
