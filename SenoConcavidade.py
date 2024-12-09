@@ -63,7 +63,7 @@ class SenoConcavidade(Scene):
         self.play(Create(graphpos3),run_time=2)
         self.play(Create(grupo_pontos),run_time=2)
         self.play(FadeOut(senao),Write(concposi))
-        self.wait(4)
+        self.wait(2)
         self.play(FadeOut(grupo_pontos))
         self.play(FadeOut(graphpos1),FadeOut(graphpos2),FadeOut(graphpos3),FadeOut(concposi))
         self.play(Create(senao),run_time=3)
@@ -72,7 +72,7 @@ class SenoConcavidade(Scene):
         self.play(Create(graphneg2),run_time=2)
         self.play(Create(graphneg3),run_time=2)
         self.play(FadeOut(senao),Write(concneg))
-        self.wait(3)
+        
         self.play(FadeOut(grupo_pontos))
         self.play(FadeOut(conc),FadeOut(concneg),FadeOut(graphneg1),FadeOut(graphneg2),FadeOut(graphneg3))
       
@@ -94,7 +94,7 @@ class SenoConcavidade(Scene):
 
 
         self.play(Write(inflexao2))
-        self.wait(5)
+        self.wait(3)
 
 
         

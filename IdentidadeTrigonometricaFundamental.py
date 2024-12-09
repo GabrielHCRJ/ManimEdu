@@ -14,8 +14,6 @@ class IdentidadeTrigonometricaFundamental(MovingCameraScene):
 # - #d21616
 # - #ffffff
 # - #000000
-
-
   
 
     def construct(self):

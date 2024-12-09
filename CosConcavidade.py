@@ -59,18 +59,18 @@ class CosConcavidade(Scene):
         #ANIMAÇÃO
         self.play(Create(axes),Create(axes_label))
         self.play(Write(cosseno))
-        self.play(Create(cossenao),run_time=3)
+        self.play(Create(cossenao),run_time=1)
         self.play(Write(conc))
         self.play(Create(graphpos1))
         self.play(Create(graphpos2))
         self.play(Create(graphpos3))
         self.play(Create(graphpos4))
-        self.play(Create(grupo_pontos),run_time=4)
+        self.play(Create(grupo_pontos),run_time=2)
         self.play(FadeOut(cossenao),Write(concposi))
         self.wait(4)
         self.play(FadeOut(grupo_pontos))
         self.play(FadeOut(graphpos1),FadeOut(graphpos2),FadeOut(graphpos3),FadeOut(graphpos4),FadeOut(concposi))
-        self.play(Create(cossenao),run_time=3)
+        self.play(Create(cossenao),run_time=1)
         self.play(Create(grupo_pontos),FadeOut(ponto1),run_time=3)
         self.play(Create(graphneg1))
         self.play(Create(graphneg2))
@@ -108,7 +108,7 @@ class CosConcavidade(Scene):
 
 
         
-        self.wait(5)
+        self.wait(3)
 
 
         

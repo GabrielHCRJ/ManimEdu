@@ -1,7 +1,7 @@
 # ManimEdu: Animações Didáticas para Matemática com Manim uma lib Python
 
 ---
-Este repositório contém uma coleção de animações criadas usando a biblioteca [Manim](https://github.com/3b1b/manim) que desenvolvi durante minha participação no projeto [REDMat](https://redmatuff.github.io/site/) com o objetivo de produzir materiais didáticos digitais para serem utilizados em sala de aula e compartilhados online de forma a auxiliar o trabalho dos professores inserindo novas tecnologias no ensino de matemática.  
+Este repositório contém uma coleção de animações criadas usando a biblioteca [Manim](https://github.com/3b1b/manim), com o objetivo de produzir materiais didáticos digitais para serem utilizados em sala de aula e compartilhados online de forma a auxiliar o trabalho dos professores inserindo novas tecnologias no ensino de matemática.  
 
 ## 📚 Propósito do Projeto
 
