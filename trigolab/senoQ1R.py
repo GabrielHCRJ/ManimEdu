@@ -40,11 +40,7 @@ class SenoQ1(Scene):
                    fill_opacity=5,
                    stroke_width=1)
         
-        labelA=MathTex('A=(\\frac{\\pi}{4},sen(\\frac{\\pi}{4}))', 
-                       color=WHITE,
-                       font_size=32).next_to(pontoA,
-                                             0.5*DOWN +10*RIGHT,
-                                             buff=0.2)
+        
         
         pontoD=Dot(axes_graph.c2p(4*np.pi/3,sin(4*np.pi/3)),
                    color=RED,
@@ -91,12 +87,7 @@ class SenoQ1(Scene):
                     end=axes.c2p(1,0),
                     color=RED)
         
-        linhaRx=DashedLine(start=axes_graph.c2p(pi/4,0),
-                    end=axes_graph.c2p(pi/4,sin(pi/4)),
-                    color=WHITE)
-        linhaRy=DashedLine(start=axes_graph.c2p(0,sin(pi/4)),
-                    end=axes_graph.c2p(pi/4,sin(pi/4)),
-                    color=WHITE)
+        
 
         angle= Angle(linha1,
                      linha2,
@@ -125,13 +116,31 @@ class SenoQ1(Scene):
         # self.add(label_seno) 
      
         self.add(curva_parametrica)      
-        self.add(linha1,linha2,angle,labelAngle)
-        
-        self.add(pontoA,labelA)
-        self.add(linhaRx,linhaRy)
+        self.add(linha1,linha2,angle,labelAngle)        
+
+        self.add(pontoA)
         self.add(pontoB)
         self.add(pontoC)
         self.add(pontoD)
+
+        def respostas(label,ponto,x):
+            labelA=MathTex(label, #O QUE VAI ESTA ESCRITO DO LADO DO PONTO
+                       color=WHITE,
+                       font_size=32).next_to(ponto, # QUAL O PONTO DA RESPOSTA?
+                                             0.5*DOWN +10*RIGHT,
+                                             buff=0.2) 
+            
+            linhaRx=DashedLine(start=axes_graph.c2p(x,0),
+                        end=axes_graph.c2p(x,sin(x)),
+                        color=WHITE)
+            linhaRy=DashedLine(start=axes_graph.c2p(0,sin(x)),
+                        end=axes_graph.c2p(x,sin(x)),
+                        color=WHITE)
+            
+            self.add(labelA)
+            self.add(linhaRx,linhaRy)
+
+        respostas('A=(\\frac{\\pi}{4},sen(\\frac{\\pi}{4}))',pontoA,pi/4)
 
       
        

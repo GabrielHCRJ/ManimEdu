@@ -151,6 +151,25 @@ class TgQ4(Scene):
         self.play(Create(pontoB),Write(labelB))
         self.play(Create(pontoC),Write(labelC))
         self.play(Create(pontoD),Write(labelD))
+        def respostas(label,ponto,x):
+            labelA=MathTex(label, #O QUE VAI ESTA ESCRITO DO LADO DO PONTO
+                       color=WHITE,
+                       font_size=24).next_to(ponto, # QUAL O PONTO DA RESPOSTA?
+                                             UP+2*RIGHT,#LOCAL EM ERELAÇÃO AO PONTO
+                                             buff=0.2) 
+            
+            linhaRx=DashedLine(start=axes_graph.c2p(x,0),
+                        end=axes_graph.c2p(x,tan(x)),
+                        color=WHITE)
+            linhaRy=DashedLine(start=axes_graph.c2p(0,tan(x)),
+                        end=axes_graph.c2p(x,tan(x)),
+                        color=WHITE)
+            
+            self.add(labelA)
+            self.add(linhaRx,linhaRy)
+
+
+        respostas('D=(\\frac{7\\pi}{4},sen(\\frac{7\\pi}{4}))',pontoA,7*pi/4)        
 
       
        

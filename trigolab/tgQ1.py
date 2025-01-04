@@ -26,7 +26,6 @@ class TgQ1(Scene):
         label_graphpi=MathTex("\\pi",color=WHITE,font_size=24).next_to(Dot(axes_graph.c2p(np.pi,0)),0.5*DOWN)
         label_graph3pi2=MathTex("\\frac{3\\pi}{2}",color=WHITE,font_size=24).next_to(Dot(axes_graph.c2p(3*np.pi/2,0)),0.5*DOWN)
         label_graph2pi=MathTex("2\\pi",color=WHITE,font_size=24).next_to(Dot(axes_graph.c2p(2*np.pi,0)),0.5*DOWN)
-
        
 
         label_circulo0=MathTex('0=2\\pi',color=WHITE,font_size=24).next_to(Dot(axes.c2p(1,0)),0.5*RIGHT)
@@ -152,6 +151,25 @@ class TgQ1(Scene):
         self.play(Create(pontoC),Write(labelC))
         self.play(Create(pontoD),Write(labelD))
 
+        def respostas(label,ponto,x):
+            labelA=MathTex(label, #O QUE VAI ESTA ESCRITO DO LADO DO PONTO
+                       color=WHITE,
+                       font_size=24).next_to(ponto, # QUAL O PONTO DA RESPOSTA?
+                                             UP+2*RIGHT,#LOCAL EM ERELAÇÃO AO PONTO
+                                             buff=0.2) 
+            
+            linhaRx=DashedLine(start=axes_graph.c2p(x,0),
+                        end=axes_graph.c2p(x,tan(x)),
+                        color=WHITE)
+            linhaRy=DashedLine(start=axes_graph.c2p(0,sin(x)),
+                        end=axes_graph.c2p(x,tan(x)),
+                        color=WHITE)
+            
+            self.add(labelA)
+            self.add(linhaRx,linhaRy)
+
+
+        respostas('A=(\\frac{\\pi}{6},sen(\\frac{\\pi}{6}))',pontoA,np.pi/6)        
       
        
 
