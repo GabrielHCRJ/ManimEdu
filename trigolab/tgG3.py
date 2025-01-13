@@ -83,7 +83,7 @@ class tgG3(Scene):
 
         circuloA=VGroup(label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
 
-        def circuloB(right,up,left,down,angulo,linhax,linhay,tag):
+        def circuloB(right,up,left,down,angulo,linhax,linhay,tag,border=BLACK):
             axesA=Axes(x_range=[-1,1],
                     y_range=[-1,1],
                     x_length=5,
@@ -119,10 +119,13 @@ class tgG3(Scene):
                         color=RED)
             
           
-            label_ponto=Tex(tag,color=WHITE,font_size=32).next_to(linha1A,1*DOWN)
-
-            circuloA=VGroup(label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
-       
+            label_ponto=Tex(tag,color=WHITE,font_size=24).next_to(linha1A,1*DOWN)
+            borda = SurroundingRectangle(
+            curva_parametricaA,
+            color=border,
+            corner_radius=0.4)
+            self.add(borda)
+            circuloA=VGroup(borda,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
             self.play(circuloA.animate.scale(0.5).shift(right*RIGHT+up*UP+left*LEFT+down*DOWN))
 
         tangente1=axes_graph.plot(
@@ -182,7 +185,7 @@ class tgG3(Scene):
         self.play(circuloA.animate.scale(0.5).shift(-2*RIGHT+UP))
         
         circuloB(2,1,0,0,pi/6,0.87,0.5,'B')
-        circuloB(-2,-1,0,0,2*pi/3,-0.5,0.87,'C')
+        circuloB(-2,-1,0,0,2*pi/3,-0.5,0.87,'C',YELLOW)
         circuloB(2,-1,0,0,5*pi/3,0.5,-0.87,'D')
     
 

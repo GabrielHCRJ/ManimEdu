@@ -74,16 +74,17 @@ class CosG4(Scene):
                      radius=0.4,
                      other_angle=True,
                      color=RED)
-        
-        # ponto=Dot(axesA.c2p(pi/4,cos(pi/4)),
-        #            color=RED,
-        #            fill_opacity=5,
-        #            stroke_width=1)
+
         label_ponto=MathTex("A",color=WHITE,font_size=32).next_to(linha1A,0.5*UP)
+        borda = SurroundingRectangle(
+            curva_parametricaA,
+            color=YELLOW,
+            corner_radius=0.4)
+        self.add(borda)
+        
+        circuloA=VGroup(borda,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
 
-        circuloA=VGroup(label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
-
-        def circuloB(right,up,left,down,angulo,linhax,linhay,tag):
+        def circuloB(right,up,left,down,angulo,linhax,linhay,tag,border=BLACK):
             axesA=Axes(x_range=[-1,1],
                     y_range=[-1,1],
                     x_length=5,
@@ -119,13 +120,15 @@ class CosG4(Scene):
                         color=RED)
             
           
-            label_ponto=Tex(tag,color=WHITE,font_size=32).next_to(linha1A,1*DOWN)
-
-            circuloA=VGroup(label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
-       
+            label_ponto=Tex(tag,color=WHITE,font_size=24).next_to(linha1A,1*DOWN)
+            borda = SurroundingRectangle(
+            curva_parametricaA,
+            color=border,
+            corner_radius=0.4)
+            self.add(borda)
+            circuloA=VGroup(borda,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
             self.play(circuloA.animate.scale(0.5).shift(right*RIGHT+up*UP+left*LEFT+down*DOWN))
-
-                 
+                        
         cosseno=axes_graph.plot(
         lambda x: cos(x),
                 x_range=[0,2*np.pi],

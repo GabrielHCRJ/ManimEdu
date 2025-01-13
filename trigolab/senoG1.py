@@ -78,10 +78,13 @@ class SenoG1(Scene):
                    fill_opacity=5,
                    stroke_width=1)
         label_ponto=MathTex("A",color=WHITE,font_size=24).next_to(ponto,0.5*UP)
+        borda = SurroundingRectangle(
+            curva_parametricaA,
+            color=YELLOW,
+            corner_radius=0.4)
+        circuloA=VGroup(borda,ponto,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
 
-        circuloA=VGroup(ponto,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
-
-        def circuloB(right,up,left,down,angulo,linhax,linhay,tag):
+        def circuloB(right,up,left,down,angulo,linhax,linhay,tag,border):
             axesA=Axes(x_range=[-1,1],
                     y_range=[-1,1],
                     x_length=5,
@@ -116,12 +119,20 @@ class SenoG1(Scene):
                         other_angle=True,
                         color=RED)
             
+            borda = SurroundingRectangle(
+            curva_parametricaA,
+            color=border,
+            corner_radius=0.4  # Ajuste o raio das bordas arredondadas
+        )
           
             label_ponto=Tex(tag,color=WHITE,font_size=24).next_to(linha1A,1*DOWN)
+            
 
-            circuloA=VGroup(label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
-       
+            circuloA=VGroup(borda,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
+            self.add(borda)
+            
             self.play(circuloA.animate.scale(0.5).shift(right*RIGHT+up*UP+left*LEFT+down*DOWN))
+            
 
                  
         seno=axes_graph.plot(
@@ -153,28 +164,19 @@ class SenoG1(Scene):
         self.play(Write(label_graphpi),Write(label_circulopiA))
         self.play(Write(label_graph3pi2),Write(label_circulo3pi2A))
         self.play(Write(label_graph2pi))  
+        
         graficoAngulo(lambda x: sin(x),np.pi/4,'\\frac{\\pi}{4}')
         self.play(Create(curva_parametricaAR))
         self.play(Create(linha1A),Create(linha2A),Create(angleA))
         self.play(Create(ponto),Create(label_ponto))
   
         self.wait()
-      
+        self.add(borda)
         self.play(circuloA.animate.scale(0.5).shift(-2*RIGHT+UP))
-        circuloB(2,1,0,0,3*pi/4,-0.71,0.71,'B')
-        circuloB(-2,-1,0,0,7*pi/6,-0.87,-0.5,'C')
-        circuloB(2,-1,0,0,5*pi/3,0.5,-0.87,'D')
-     
-        # self.play(Create(seno45)) 
-        # self.play(Create(pontopi4),Write(label_pontopi4))   
-        # self.play(Create(curva_parametricaB),Create(labelAngleB))  
-        # self.play(Create(labelAngleA))
-
-       
-
-
-        # self.play(Create(linha1),Create(linha2),Create(angle),Write(labelAngleA))
-     
+        circuloB(2,1,0,0,3*pi/4,-0.71,0.71,'B',BLACK)
+        circuloB(-2,-1,0,0,7*pi/6,-0.87,-0.5,'C',BLACK)
+        circuloB(2,-1,0,0,5*pi/3,0.5,-0.87,'D',BLACK)
+            
       
        
 

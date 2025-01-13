@@ -80,10 +80,14 @@ class tgG2(Scene):
         #            fill_opacity=5,
         #            stroke_width=1)
         label_ponto=MathTex("A",color=WHITE,font_size=32).next_to(linha1A,0.5*UP)
+        borda = SurroundingRectangle(
+            curva_parametricaA,
+            color=YELLOW,
+            corner_radius=0.4)
+        self.add(borda)
+        circuloA=VGroup(borda,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
 
-        circuloA=VGroup(label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
-
-        def circuloB(right,up,left,down,angulo,linhax,linhay,tag):
+        def circuloB(right,up,left,down,angulo,linhax,linhay,tag,border=BLACK):
             axesA=Axes(x_range=[-1,1],
                     y_range=[-1,1],
                     x_length=5,
@@ -119,12 +123,14 @@ class tgG2(Scene):
                         color=RED)
             
           
-            label_ponto=Tex(tag,color=WHITE,font_size=32).next_to(linha1A,1*DOWN)
-
-            circuloA=VGroup(label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
-       
+            label_ponto=Tex(tag,color=WHITE,font_size=24).next_to(linha1A,1*DOWN)
+            borda = SurroundingRectangle(
+            curva_parametricaA,
+            color=border,
+            corner_radius=0.4)
+            self.add(borda)
+            circuloA=VGroup(borda,label_ponto,linha1A,linha2A,angleA,axesA,label_circulo0A,label_circulopi2A,label_circulopiA,label_circulo3pi2A,curva_parametricaA,curva_parametricaAR)
             self.play(circuloA.animate.scale(0.5).shift(right*RIGHT+up*UP+left*LEFT+down*DOWN))
-
         tangente1=axes_graph.plot(
             lambda x: tan(x),
                    x_range=[0,(np.pi/2)-0.2],
